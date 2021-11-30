@@ -6,6 +6,8 @@ import Head from 'next/head'
 
 import Post from '../components/Post'
 
+import sortByDate from '../utils'
+
 const getStaticProps = async () => {
   // apparently nextjs is smart enough to allow us to use fs in here (normally using fs in client side code will not compile)
   const files = fs.readdirSync(path.join('posts'))
@@ -27,13 +29,12 @@ const getStaticProps = async () => {
   })
   return {
     props: {
-      posts: posts
+      posts: posts.sort(sortByDate)
     }
   }
 }
 
 const Home = ({ posts }) => {
-  console.log(posts)
   return (
     <div>
       <Head>
