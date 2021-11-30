@@ -1,5 +1,5 @@
 # Simple Markdown Blog website
-Created for fun to play with [marked](https://github.com/markedjs/marked) (a markdown processing library) and nextjs.
+Created for fun to play with [marked](https://github.com/markedjs/marked) (a markdown processing library) and [nextjs](https://nextjs.org/).
 
 ## Screenshots
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/54048682/144118888-df5415a6-ad9e-4ab1-82af-3992e776efec.png">
